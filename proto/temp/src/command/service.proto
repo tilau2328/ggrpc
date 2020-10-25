@@ -1,0 +1,12 @@
+syntax = "proto3";
+package temp.command;
+import "temp/src/command/create.proto";
+import "temp/src/command/update.proto";
+import "temp/src/command/delete.proto";
+option go_package = "github.com/tilau2328/ggrpc/pkg/service/temp/src/command";
+
+service TempCommandService {
+  rpc create(CreateTempRequest) returns (CreateTempResponse);
+  rpc update(UpdateTempRequest) returns (UpdateTempResponse);
+  rpc delete(DeleteTempRequest) returns (DeleteTempResponse);
+}

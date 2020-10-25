@@ -1,0 +1,12 @@
+syntax = "proto3";
+package proto.command;
+import "proto/src/command/create.proto";
+import "proto/src/command/update.proto";
+import "proto/src/command/delete.proto";
+option go_package = "github.com/tilau2328/ggrpc/pkg/service/proto/src/command";
+
+service ProtoCommandService {
+  rpc create(CreateProtoRequest) returns (CreateProtoResponse);
+  rpc update(UpdateProtoRequest) returns (UpdateProtoResponse);
+  rpc delete(DeleteProtoRequest) returns (DeleteProtoResponse);
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package temp.query;
+option go_package = "github.com/tilau2328/ggrpc/pkg/service/temp/src/query";
+
+message FindTempRequest {
+
+}
+
+message FindTempResponse {
+
+}

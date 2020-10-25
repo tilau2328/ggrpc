@@ -1,0 +1,11 @@
+syntax = "proto3";
+package proto.event;
+option go_package = "github.com/tilau2328/ggrpc/pkg/service/proto/src/event";
+
+message ProtoCreatedRequest {
+
+}
+
+message ProtoCreatedResponse {
+
+}

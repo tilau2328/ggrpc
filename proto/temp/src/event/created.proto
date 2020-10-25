@@ -1,0 +1,11 @@
+syntax = "proto3";
+package temp.event;
+option go_package = "github.com/tilau2328/ggrpc/pkg/service/temp/src/event";
+
+message TempCreatedRequest {
+
+}
+
+message TempCreatedResponse {
+
+}
